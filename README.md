@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# blog_app
+testing blog app via ruby on rails
+>>>>>>> 20e250392867028d66613ced86e5533188797b33
