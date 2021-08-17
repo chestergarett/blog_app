@@ -55,6 +55,7 @@ group :test do
 end
 
 group :production do
+  gem 'rack-mini-profiler', '~> 2.0'
   gem 'pg'
 end
 
