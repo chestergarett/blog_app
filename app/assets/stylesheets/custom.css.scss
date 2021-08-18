@@ -1,47 +1,220 @@
 @import 'bootstrap/dist/css/bootstrap';
 
 .navbar{
-    background-color:   black !important;
+    background-color:   #060928 !important;
+    margin-bottom: 0;
 }
 
 .nav-link{
     color: white !important;
 }
 
+.search-container{
+  height: 75%;
+}
+
 #logo{
     float: left;
-    font-size: 1.7em;
+    margin-right: 1rem;
+    margin-bottom: 0; 
+    font-size: 2em;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: -1px;
     font-weight: bold;
 }
 
+
 #home-container{
-    margin-top: 25px;
+    background: #060928 !important;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    height: 90vh;
 }
 
 .jumbotron{
-    background-image: asset-url('jumbo-copy.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 425px;
+    background: transparent !important;
+    color: white;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-container{
+  display: flex;
+}
+
+.form-home{
+  width: 80%;
+}
+
+.rotating-logo{
+  background: url("https://github.githubassets.com/images/modules/site/home/globe.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 50%;
 }
 
 html,body{
     height: 100%; 
 }
 
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 #page-content{
     flex: 1 0 auto;
-    background-color: lightgrey;
+    margin-top: 0;
 }
 
 #sticky-footer{
     flex-shrink: none;
+    background-color: #060928 !important;
 }
 
+/*new user view */
+.new-container{
+  background: #060928 !important;
+  height: 90vh;
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.new-form{
+  margin-top: -10rem;
+}
+
+.new-form-container{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-new{
+  margin-bottom: 0; 
+  font-size: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+/*signup view */
+
+.signup-view{
+  margin-top: -10rem;
+  width: 100%;
+}
+
+.signup-font{
+  color: skyblue;
+}
+
+.user-form{
+  align-items:center;
+  justify-content: center;
+  display: flex;
+}
+
+/*login view*/
+.body-container{
+  background: whitesmoke !important;
+  height: 90vh;
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+.body-view{
+  margin-top: -10rem;
+  width: 100%;
+  color: black;
+}
+
+/*flash messages*/
+.flash-position{
+  position: fixed;
+  top: 10%;
+  left: 30%;
+  width: 50%;
+}
+
+/*user profile*/
+.show-profile{
+  display: flex;
+}
+
+.profile-details{
+  flex-basis: 15%;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 1rem;
+  border-right: 1px solid black;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.horizontal-content-rule{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid gray;
+  flex-grow: 1;
+  width: 100%;
+}
+.sidebar-header{
+  display: flex;
+}
+
+.sidebar-edit{
+  padding-bottom: .3rem;
+}
+
+.sidebar-favorites{
+  padding-bottom: .5rem;
+}
+
+.sidebar-recents{
+  padding-bottom: .3rem;
+  font-size: 12px;
+}
+
+.sidebar-input{
+  height: 70%;
+  margin-bottom: .5rem;
+}
+
+.article-details{
+  flex-basis: 90%;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+/*cards layout*/
+.custom-headers{
+  display:flex;
+  justify-content: space-between;
+}
 /*pagination styling*/
 .flickr_pagination {
     text-align: center;
@@ -56,17 +229,17 @@ html,body{
     .flickr_pagination .current {
       font-style: normal;
       font-weight: bold;
-      color: #ff0084; }
+      color: green; }
     .flickr_pagination a {
       border: 1px solid whitesmoke;
-      color: whitesmoke;
+      color: black;
       text-decoration: none; }
       .flickr_pagination a:hover, .flickr_pagination a:focus {
         border-color: gray;
         background: whitesmoke;
         color: gray; }
     .flickr_pagination .page_info {
-      color: #aaaaaa;
+      color: black;
       padding-top: 0.8em; }
     .flickr_pagination .previous_page, .flickr_pagination .next_page {
       border-width: 2px; }

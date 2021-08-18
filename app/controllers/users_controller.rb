@@ -19,7 +19,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       session[:user_id] = @user.id
-      flash[:notice] = "Welcome to Alpha Blog #{@user.username}, you have successfully signed up"
+      flash[:notice] = "Welcome #{@user.username}, you have successfully signed up."
       redirect_to articles_path
     else
       render 'new'
@@ -57,7 +57,7 @@ class UsersController < ApplicationController
 
   def require_same_user
     if current_user != @user && !current_user.admin?
-      flash[:alert] = "You can only edit your account"
+      flash[:alert] = "Unable to edit."
       redirect_to @user
     end
   end

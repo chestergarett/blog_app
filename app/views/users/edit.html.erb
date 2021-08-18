@@ -1,2 +1,12 @@
-<h1 class="text-center mt-4">Edit your profile</h1>
-<%= render 'form' %>
+<div class="show-profile">
+    <div class="profile-details">
+        <%=render 'sidebar'%>
+    </div>
+    <div class="article-details">
+        <h3 class="text-center mt-4 mb-3">Edit details</h3>
+        <%= render 'form' %>
+        <div class='text-center' style="color: red">
+            <%= "This account has administrator privileges." if current_user.admin? %>
+        </div>
+    </div>
+</div>

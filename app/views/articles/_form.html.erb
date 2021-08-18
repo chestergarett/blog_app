@@ -1,24 +1,24 @@
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col-10">
+    <div class="col-5">
       <%= render 'shared/errors', obj: @article %>
-      <%= form_with(model: @article, class: "shadow p-3 mb-5 bg-info rounded", local:true)do  |f| %>
-        <div class="form-group row">
-          <%= f.label :title, class: "col-2 col-form-label text-light", placeholder: "Title" %>
-          <div class="col-10">
-            <%= f.text_field :title, class: "form-control shadow rounded", placeholder: "Description" %>
+      <%= form_with(model: @article, class: "shadow p-3 mb-5 rounded", local:true)do  |f| %>
+        <div class="form-group row user-form">
+          <%= f.label :title, class: "col-2 col-form-label mr-3", placeholder: "Title" %>
+          <div class="col-8">
+            <%= f.text_field :title, class: "form-control shadow rounded", placeholder: "Title" %>
           </div>
         </div>
 
-        <div class="form-group row">
-          <%= f.label :description,class: "col-2 col-form-label text-light" %>
-          <div class="col-10">
-            <%= f.text_area :description, rows: 10, class: "form-control shadow rounded" %>
+        <div class="form-group row user-form">
+          <%= f.label :description, class: "col-2 col-form-label mr-3", placeholder: "Description" %>
+          <div class="col-8">
+            <%= f.text_area :description, rows: 3, class: "form-control shadow rounded" %>
           </div>
         </div>
 
         <div class="form-group row justify-content-center">
-          <%= f.submit class: "btn btn-outline-light btn-lg" %>
+          <%= f.submit class: "btn btn-success btn-sm" %>
         </div>
       <%end%>
       <div class="row justify-content-center">

@@ -1,0 +1,41 @@
+<p class="text-left mt-4 mb-3">
+            <div class="mt-2 sidebar-header">
+                <%if logged_in?%>
+                    <%= @user.username%>
+                    <span style="color: red">&nbsp;<%= "(Admin)" if (current_user.admin?)%></span>
+                <%end%>
+            </div>
+        </p>
+        <div class="horizontal-content-rule">&nbsp;</div>
+        <div class="sidebar-favorites">
+            <p>Favorites</p>
+            <form class="form-inline">
+                <input class="form-control sidebar-input" type="search" placeholder="Quick search" aria-label="Search">
+            </form>
+            <ul style="color: gray">
+                <li>placeholder/post</li>
+                <li>placeholder/post</li>
+                <li>placeholder/post</li>
+                <li>placeholder/post</li>
+                <li>placeholder/post</li>
+            </ul>
+        </div>
+        <div class="horizontal-content-rule">&nbsp;</div>
+        <div class='sidebar-recents'>
+            <p>Recent Activity</p>
+            <p style="color: gray">When you take actions across Gitbug, we’ll provide links to that activity here.</p>
+        </div>
+        <div class="horizontal-content-rule">&nbsp;</div>
+        <div class='sidebar-teams'>
+            <p>Your teams</p>
+            <form class="form-inline">
+                <input class="form-control sidebar-input" type="search" placeholder="Find a team.." aria-label="Search">
+            </form>
+            <ul style="color: gray">
+                <li>avionschool/team</li>
+                <li>placeholder/org</li>
+                <li>placeholder/org</li>
+                <li>placeholder/org</li>
+                <li>placeholder/org</li>
+            </ul>
+        </div>
