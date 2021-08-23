@@ -1,0 +1,19 @@
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Body</th>
+            <th>Article ID</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% @comments.each do |comment|%>
+            <tr><%= comment.id%></tr>
+            <tr><%= comment.body%></tr>
+            <tr><%= article.article_id%></tr>
+        <%end%>
+    </tbody>
+</table>    
+
+<%= link_to 'Add comment', new_article_comment_path(@article) %>

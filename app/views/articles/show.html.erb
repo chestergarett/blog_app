@@ -10,6 +10,9 @@
             <div class="card text-center shadow mb-5 bg-white rounded">
               <div class="card-header font-italic custom-headers">
                 <%= link_to @article.user.username, user_path(@article.user)%>
+                <%if @article.categories.any? %>
+                  <%= render @article.categories %>
+                <%end%>
                 <span>
                   <%if logged_in? && (@article.user == current_user  || current_user.admin?) %>
                     <%= link_to fa_icon('edit'), edit_article_path(@article), class: "btn btn-outline-info" %>
